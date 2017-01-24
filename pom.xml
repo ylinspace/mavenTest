@@ -161,7 +161,7 @@
 		</dependency>
 
 	</dependencies>
-	<!-- 外部Jar包没有maven依赖，需要指定文件的位置 修改1-->
+	<!-- 外部Jar包没有maven依赖，需要指定文件的位置 修改2-->
 	<build>
 		<plugins>
 			<plugin>
