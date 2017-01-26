@@ -1,9 +1,1 @@
-/applicationContext.xml
-/c3p0.properties
-/memcached.properties
-/mybatis-config.xml
-/mybatis-user.xml
-/org/
-/redis.properties
-/role.xml
-/struts.xml
+/target/
