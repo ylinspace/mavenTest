@@ -161,7 +161,7 @@
 		</dependency>
 
 	</dependencies>
-	<!-- 外部Jar包没有maven依赖，需要指定文件的位置 修改2-->
+	<!-- 外部Jar包没有maven依赖，需要指定文件的位置 修改3-->
 	<build>
 		<plugins>
 			<plugin>
@@ -177,6 +177,15 @@
 				</configuration>
 			</plugin>
 		</plugins>
+
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+		</resources>
 	</build>
 
 </project>
