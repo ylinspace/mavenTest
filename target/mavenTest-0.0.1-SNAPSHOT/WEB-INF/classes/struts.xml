@@ -62,7 +62,6 @@
 				<param name="root">rootMap</param>
 			</result>
 		</action>
-
 		<!-- 页面跳转 -->
 		<action name="*">
 			<result name="success">/login/{1}.jsp</result>

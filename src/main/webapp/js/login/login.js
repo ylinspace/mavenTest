@@ -5,7 +5,8 @@ function submitLogin(){
 	var pObj = $("#password");
 	var submit_data={"user.username":uObj.val(),"user.password":pObj.val(),"rURL":rURL};
 	$.ajax({
-		url:"/login/login.action",
+		// url:"/login/login.action",
+		url:"/spring/login.action",
 		type:'post',
 		data:submit_data,
 		success:function(responseText){
