@@ -173,7 +173,7 @@
 		</dependency>
 
 	</dependencies>
-	<!-- 外部Jar包没有maven依赖，需要指定文件的位置 修改3-->
+	<!-- 外部Jar包没有maven依赖，需要指定文件的位置 修改4-->
 	<build>
 		<plugins>
 			<plugin>
