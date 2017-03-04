@@ -10,7 +10,7 @@ public interface DemoService {
      * @param name
      * @return
      */
-    public String sayHello(String name );
+    public String sayHello(String name);
 
     /**
      * 根据ID获取用户信息

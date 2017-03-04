@@ -15,12 +15,14 @@ public class AppClient {
 
         DemoService service = (DemoService) context.getBean("demoService");
 
-        String result = service.sayHello("zhang");
+        for(int i=0;i<10000000;i++){
+            String result = service.sayHello("zhang");
 
-        User user = service.findUserById(12);
+            User user = service.findUserById(12);
 
-        System.out.println(user);
+            System.out.println(user);
 
-        System.out.println(result);
+            System.out.println(result);
+        }
     }
 }

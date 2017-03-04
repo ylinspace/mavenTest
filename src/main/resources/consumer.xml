@@ -12,6 +12,6 @@
 
     <dubbo:reference id="demoService" interface="org.yl.dubbo.DemoService"/>
 
-
+    <dubbo:monitor protocol="registry"/>
 
 </beans>
