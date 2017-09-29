@@ -10,7 +10,7 @@
 
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
 
-    <dubbo:reference id="demoService" interface="org.yl.dubbo.DemoService"/>
+    <dubbo:reference id="demoService" interface="org.ce.dubbo.DemoService"/>
 
     <dubbo:monitor protocol="registry"/>
 

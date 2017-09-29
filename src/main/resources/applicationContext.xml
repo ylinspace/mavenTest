@@ -75,12 +75,12 @@
 	<!-- </tx:advice> -->
 
 	<!-- <aop:config> -->
-	<!-- <aop:pointcut expression="execution(* org.yl.service.*Impl.*(..))" 
+	<!-- <aop:pointcut expression="executioorg.ceg.yl.service.*Impl.*(..))"
 		id="loginTransationPointcut"/> -->
 	<!-- <aop:advisor advice-ref="txAdvice" pointcut-ref="loginTransationPointcut"/> -->
 	<!-- </aop:config> -->
 
-	<context:component-scan base-package="org.yl">
+	<context:component-scan base-package="org.ce">
 		<context:include-filter type="annotation"
 			expression="org.aspectj.lang.annotation.Aspect" />
 	</context:component-scan>
@@ -120,19 +120,19 @@
 	<!--</bean>-->
 
 	<!-- memcached缓存实例 -->
-	<!--<bean id="memcachedProxy" class="org.yl.cache.MemcachedProxy"-->
+	<!--<bean id="memcachedProxy" claorg.ceg.yl.cache.MemcachedProxy"-->
 		<!--depends-on="memcachedPool">-->
 		<!--<constructor-arg type="java.lang.String" value="dataCache" />-->
 	<!--</bean>-->
 
 	<!-- 缓存工厂返回具体缓存实例对象，参数为注入的代理缓存对象 -->
-	<!--<bean id="dataCache" class="org.yl.spring.factory.CacheFactory">-->
+	<!--<bean id="dataCache" claorg.ceg.yl.spring.factory.CacheFactory">-->
 		<!--&lt;!&ndash; <constructor-arg ref="memcachedProxy" /> &ndash;&gt;-->
 		<!--<constructor-arg ref="redisProxy" />-->
 	<!--</bean>-->
 
 	<!-- redis缓存实例 -->
-	<!--<bean id="redisProxy" class="org.yl.cache.RedisProxy" init-method="initialize" depends-on="propertyConfigurer">-->
+	<!--<bean id="redisProxy" claorg.ceg.yl.cache.RedisProxy" init-method="initialize" depends-on="propertyConfigurer">-->
 		<!--<property name="maxActive">-->
 			<!--<value>${redis.pool.maxActive}</value>-->
 		<!--</property>-->
@@ -162,13 +162,13 @@
 		<!--</property>-->
 	<!--</bean>-->
 
-	<!-- <bean id="loginService" class="org.yl.service.LoginServiceImpl"> -->
+	<!-- <bean id="loginService" claorg.ceg.yl.service.LoginServiceImpl"> -->
 	<!-- <property name="loginDao" ref="loginDao" /> -->
 	<!-- </bean> -->
-	<!-- <bean id="loginDao" class="org.yl.dao.LoginDaoImpl"/> -->
+	<!-- <bean id="loginDao" claorg.ceg.yl.dao.LoginDaoImpl"/> -->
 
 
-	<!-- <bean id="beanPostProcessor" class="org.yl.BeanPostProcessorTest"/> -->
+	<!-- <bean id="beanPostProcessor" claorg.ceg.yl.BeanPostProcessorTest"/> -->
 	<!-- <import resource="classpath:/member/spring/config/applicationContext-iyhd-ycc.xml" 
 		/> -->
 	<!-- <import resource="classpath:/member/spring/config/applicationContext-iyhd-database.xml" 

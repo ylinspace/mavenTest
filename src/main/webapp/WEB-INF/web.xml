@@ -11,7 +11,7 @@
 
 <!-- 	<servlet> -->
 <!-- 		<servlet-name>servlet</servlet-name> -->
-<!-- 		<servlet-class>org.yl.ServletTest</servlet-class> -->
+<!-- 		<servlet-clorg.ceg.yl.ServletTest</servlet-class> -->
 <!-- 		<init-param> -->
 <!-- 			<param-name>username</param-name> -->
 <!-- 			<param-value>root</param-value> -->
@@ -54,7 +54,7 @@
 		<url-pattern>/spring/*</url-pattern>
 	</servlet-mapping>
 <!-- 	<listener> -->
-<!-- 		<listener-class>org.yl.ListenerTest</listener-class> -->
+<!-- 		<listener-clorg.ceg.yl.ListenerTest</listener-class> -->
 <!-- 	</listener> -->
 	
 	<!-- Spring启动监听 -->
