@@ -11,7 +11,7 @@ public class ZookeeperTest {
     public static void main(String[] args) throws Exception {
         // 创建一个与服务器的连接
 
-        ZooKeeper zk = new ZooKeeper("localhost:" + "2181",
+        ZooKeeper zk = new ZooKeeper("localhost:" + "2191",
                 5000, new Watcher() {
             // 监控所有被触发的事件
             public void process(WatchedEvent event) {

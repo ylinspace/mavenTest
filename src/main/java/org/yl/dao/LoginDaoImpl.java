@@ -3,16 +3,16 @@
  */
 package org.yl.dao;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 import org.yl.dao.mybatis.UserMapper;
 import org.yl.vo.User;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -27,6 +27,7 @@ public class LoginDaoImpl  implements LoginDao {
 	
 	public User getUserByUsername(String username) throws Exception {
 		User user = sqlSession.selectOne("user.selectUserByUsername", username);
+
 		return user;
 	}
 

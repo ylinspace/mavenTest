@@ -32,9 +32,9 @@ public class ZookeeperMoveTest {
 //
 
         //旧zk配置
-        ZooKeeper oldzk = new ZooKeeper("zoo1-dev.sl.com:12181", 60000, null);
+        ZooKeeper oldzk = new ZooKeeper("127.0.0.1:2193", 60000, null);
         //新zk配置
-        ZooKeeper newzk = new ZooKeeper("127.0.0.1:2193", 60000, null);
+        ZooKeeper newzk = new ZooKeeper("10.134.159.162:2181", 60000, null);
         //迁移的节点
         String node = "/com/dianrong/cfg/1.0.0/scf";
         newzk.create("/com", null, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
