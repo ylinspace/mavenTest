@@ -25,7 +25,7 @@
 			</div>
 			<div style="color:#666666;height: 30px;width: 330px;text-align: left;">
 				<label id="login_error_info"></label>
-				<a style="position: relative;left: 231px;text-decoration:none;color: #666666;" href="backendPage.action">后台</a>
+				<a style="position: relative;left: 231px;text-decoration:none;color: #666666;" href="backendPage.action">后台2</a>
 			</div>
 			<input id="loginButton" class="submit_class" type="submit" onclick="submitLogin();"
 				value="登录">
