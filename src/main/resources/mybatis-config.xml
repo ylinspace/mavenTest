@@ -9,7 +9,7 @@
 <!-- 	</mappers> -->
 	
 	<mappers>
-		<mapper resource="org/yl/dao/mybatis/userMapper.xml"/>
+		<mapper resource="org/cute/dao/mybatis/userMapper.xml"/>
 	</mappers>
 
 </configuration>

@@ -24,7 +24,7 @@
 		</interceptors>
 
 		<!-- 登录action -->
-		<action name="login" class="org.yl.action.LoginAction">
+		<action name="login" class="org.cute.action.LoginAction">
 			<interceptor-ref name="jsonDataStack"></interceptor-ref>
 			<result name="none" type="json">
 				<param name="root">rootMap</param>
@@ -32,7 +32,7 @@
 		</action>
 		
 		<!-- 注册用户 -->
-		<action name="register" class="org.yl.action.LoginAction" method="register">
+		<action name="register" class="org.cute.action.LoginAction" method="register">
 			<interceptor-ref name="jsonDataStack"></interceptor-ref>
 			<result name="none" type="json">
 				<param name="root">rootMap</param>
@@ -40,7 +40,7 @@
 		</action>
 		
 		<!-- 删除用户 -->
-		<action name="deleteUser" class="org.yl.action.LoginAction" method="deleteUser">
+		<action name="deleteUser" class="org.cute.action.LoginAction" method="deleteUser">
 			<interceptor-ref name="jsonDataStack"></interceptor-ref>
 			<result name="none" type="json">
 				<param name="root">rootMap</param>
@@ -48,7 +48,7 @@
 		</action>
 		
 		<!-- 查询所有注册用户 -->
-		<action name="queryUsers" class="org.yl.action.LoginAction" method="queryUsers">
+		<action name="queryUsers" class="org.cute.action.LoginAction" method="queryUsers">
 			<interceptor-ref name="jsonDataStack"></interceptor-ref>
 			<result name="none" type="json">
 				<param name="root">rootMap</param>
@@ -56,7 +56,7 @@
 		</action>
 		
 		<!-- 更新用户 -->
-		<action name="updateUser" class="org.yl.action.LoginAction" method="updateUser">
+		<action name="updateUser" class="org.cute.action.LoginAction" method="updateUser">
 			<interceptor-ref name="jsonDataStack"></interceptor-ref>
 			<result name="none" type="json">
 				<param name="root">rootMap</param>

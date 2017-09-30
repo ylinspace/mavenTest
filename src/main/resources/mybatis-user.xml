@@ -5,30 +5,30 @@
 
 <mapper namespace="user">
 
-	<resultMap id="userMap" type="org.ce.vo.User">
+	<resultMap id="userMap" type="org.cute.vo.User">
 		<id property ="id" column="id"  />
 		<result property="username" column="username" />
 		<result property="password" column="password" />
 	</resultMap>
 	
 	<!-- 通过用户名查询用户 -->
-	<select id="selectUserByUsername" parameterType="string" resultType="org.ce.vo.User">
-		select id,username ,password from sys.end_user where username = #{username} 
+	<select id="selectUserByUsername" parameterType="string" resultType="org.cute.vo.User">
+		select id,username ,password from end_user where username = #{username}
 	</select>
 
 	<!-- 插入用户 -->
-	<insert id="insertUser" parameterType="org.ce.vo.User" useGeneratedKeys="true" keyProperty="id">
-		insert into sys.end_user(username,password) values(#{username},#{password})
+	<insert id="insertUser" parameterType="org.cute.vo.User" useGeneratedKeys="true" keyProperty="id">
+		insert into end_user(username,password) values(#{username},#{password})
 	</insert>
 	
 	<!-- 删除用户 -->
 	<delete id="deleteUser" parameterType="string" >
-		delete from sys.end_user where username = #{username}
+		delete from end_user where username = #{username}
 	</delete>
 	
 	<!-- 查询用户 -->
 	<select id="selectUsers" parameterType="int" resultMap="userMap">
-		select id,username ,password from sys.end_user limit 0,#{maxSize}
+		select id,username ,password from end_user limit 0,#{maxSize}
 	</select>
 
 </mapper>

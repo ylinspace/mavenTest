@@ -5,11 +5,11 @@
 <configuration>
 	<!-- 用包名引入映射器 -->
 <!-- 	<mappers> -->
-<!-- 		<package name="org.yl.dao.mabatis" /> -->
+<!-- 		<package naorg.ceg.yl.dao.mabatis" /> -->
 <!-- 	</mappers> -->
 	
 	<mappers>
-		<mapper resource="org/yl/dao/mybatis/userMapper.xml"/>
+		<mapper resource="org/cute/dao/mybatis/userMapper.xml"/>
 	</mappers>
 
 </configuration>

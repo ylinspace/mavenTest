@@ -12,9 +12,9 @@
 
     <dubbo:protocol name="dubbo" port="20881"/>
 
-    <dubbo:service interface="org.ce.dubbo.DemoService" ref="demoService"/>
+    <dubbo:service interface="org.cute.dubbo.DemoService" ref="demoService"/>
 
-    <bean id="demoService" class="org.ce.dubbo.DemoServiceImpl" />
+    <bean id="demoService" class="org.cute.dubbo.DemoServiceImpl" />
 
     <dubbo:monitor protocol="registry"/>
 
