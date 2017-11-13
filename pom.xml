@@ -6,6 +6,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
+	asdfadfasd
+
 	<dependencies>
 		<dependency>
 			<groupId>mysql</groupId>
