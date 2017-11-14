@@ -7,7 +7,6 @@
 	<packaging>war</packaging>
 
 
-	asdfadfasd
 	<dependencies>
 		<dependency>
 			<groupId>mysql</groupId>
