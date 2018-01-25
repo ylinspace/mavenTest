@@ -6,7 +6,7 @@
 <mapper namespace="org.cute.dao.mybatis.UserMapper">
 	<!-- 更新用户 -->
 	<update id="updateUser" parameterType="map" >
-		update sys.end_user set password=#{newPassword} where username=#{username}
+		update end_user set password=#{newPassword} where username=#{username}
 	</update>
 
 </mapper>
